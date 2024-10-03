@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0px;
+        }
+        html, body {
+            height: 100vh;
+            width: 100vw;
+        }
+        
+        body {
+            background-color: #4A1E6F;
+            box-sizing: border-box;
+            
+        } 
+
+        .como {
+            width: 80%;
+            input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+        }
+
+        p {
+            color: #0a0111;
+            font-weight: normal;
+            margin-bottom: 0px;
+        }
+
+
+
+        @media screen and (max-width: 600px) {
+            .container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+               
+            }
+            
+            .item {
+                width: 299px;
+                background-color: aliceblue;
+                height: 89vh;
+                border-radius: 20px;
+                overflow: auto;
+                box-shadow: 9px 8px 7px #14071e54;
+               
+            }
+
+            .imagem {
+                background: black url(imagens/pexels-scottwebb-139198.jpg) no-repeat;
+                height: 200px;
+                background-size: cover;
+                background-position: left bottom;
+             }
+
+             h1 {
+                text-align: center;
+                font-size: 25px;
+                padding: 10px;
+             }
+
+             .back {
+                background-color: #4A1E6F;
+                border-radius: 8px;  
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+             }
+             
+             .campo {
+                padding: 12px;
+                text-align: justify;
+                letter-spacing: 0.1px;
+             }
+             input {
+                background-color: #81C6BF;
+                height: 5vh;
+                margin: 3px;
+                border: none;
+                border-radius: 5px;               
+             }
+
+             .btnenviar {
+                width: 100%;
+                background-color: #129c8e ;
+                color: white;
+                height: 5vh;
+                border-radius: 10px;
+                margin: 0px;
+                margin-bottom: 4px;
+                margin-top: 4px;
+                
+             }
+
+             .btnenviar:hover {
+                background-color: #aedad6 ;
+                color: white;
+                height: 5vh;
+                cursor: pointer;
+                transition:  background-color 0.5s;
+             }
+
+             #centr {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+             }
+
+             .senha {
+                width: 100%;
+                background-color:white ;
+                color: rgb(43, 13, 13);
+                height: 5vh;
+                border-radius: 10px;
+                outline-color: #129c8e;
+                outline-width: 0.3px;
+                outline-style: solid;   
+             }
+
+             .esq {
+                padding: 0px;
+             }
+
+             .como{
+                width: 86.4%;
+                height: 06vh;
+                font-size: 1em;
+                
+             }
+
+             .back {
+                overflow: hidden;            
+                margin-bottom: 4px;
+             }
+             .textBas {
+                padding-bottom: 10px;
+             }
+
+             .senha:hover {
+                background-color: #5bbcb2 ;
+                color: white;
+                height: 5vh;
+                cursor: pointer;
+                transition:  background-color 0.5s;
+             }
+             .material-icons {
+                color: white;
+                font-size: 36px;
+                padding-left: 7px;
+                padding-right: 7px;
+             }
+
+        }
+
+        input:focus {
+            background-color: white;
+            outline: none;
+        }
+        input {
+          left: 20px;
+        }
+
+        
+    </style>
+</head>
+<body class="container">
+    <div class="item">
+        <div class="imagem"></div>
+        <div class="campo">
+            <h1>Login</h1>
+            <p class="textBas">Seja bem vindo (a) novamente. Faca login para acessar sua conta e poder fazer as configuracoes no seu ambiente</p>
+            <form action="">
+                
+                <div class="back">
+                    <label for="ema"  class="material-icons">person</label>
+                    <input class="como" type="email" name="" id="ema" placeholder="seu e-mail"></div>
+
+
+                <div class="back">
+                    <label for="eesse" ><i class="material-icons">key</i></label>
+                    <input class="como" type="password" name="" id="esse" placeholder="sua senha">
+                </div>
+                <div id="centr"><input class="btnenviar" type="submit" value="Entrar"></div>
+            </form>
+            <div class="senha" id="centr">
+                <p>Esqueci a senha</p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
