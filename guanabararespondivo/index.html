@@ -9,6 +9,7 @@
         * {
             margin: 0;
             padding: 0px;
+            box-sizing: border-box;
         }
         html, body {
             height: 100vh;
@@ -23,34 +24,45 @@
 
         .como {
             width: 80%;
-            input {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 16px;
-}
+           
         }
+       
 
         p {
             color: #0a0111;
             font-weight: normal;
             margin-bottom: 0px;
+            text-align: justify;
         }
 
+        h1 {
+                text-align: center;
+                font-size: 25px;
+                padding: 10px;
+             }
 
 
-        @media screen and (max-width: 600px) {
+
+        @media screen and (max-width: 768px) {
+
+            * {
+                transition: all 0.3s;
+            }
             .container {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-               
+                background-color:  rgb(178, 197, 213);   
+                background-image: linear-gradient(45deg, #1d426e, #2a7796);
+                transition:  background-image 1s;  
             }
+
+            
             
             .item {
                 width: 299px;
-                background-color: aliceblue;
-                height: 89vh;
+                background-color: rgb(150, 189, 220);
+                height: 530px;
                 border-radius: 20px;
                 overflow: auto;
                 box-shadow: 9px 8px 7px #14071e54;
@@ -100,7 +112,7 @@
                 border-radius: 10px;
                 margin: 0px;
                 margin-bottom: 4px;
-                margin-top: 4px;
+                margin-top: 2px;
                 
              }
 
@@ -116,6 +128,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                padding-top: 0px;
              }
 
              .senha {
@@ -137,6 +150,7 @@
                 width: 86.4%;
                 height: 06vh;
                 font-size: 1em;
+                padding-left: .5rem;
                 
              }
 
@@ -172,14 +186,294 @@
           left: 20px;
         }
 
+        @media  screen  and (min-width: 768px) and (max-width: 992px) {
+            * {
+                transition: all 0.7s ease;
+            }
+            .container {
+                display: flex;
+                justify-content: center;                align-items: center;
+                
+                              
+            }
+
+            body {
+                background-image: linear-gradient(45deg, #1d426e, #b2d5e4);
+                transition:  background-image 1s;
+            }
+            
+            .item {
+
+                width: 84vw;
+                background-color: rgb(208, 231, 250);
+                
+                height: 41%;
+                border-radius: 20px;
+                overflow: auto;
+                box-shadow: 9px 8px 7px #14071e54;
+                display: flex;
+                 
+               
+               
+            }
+
+            .imagem {
+                background: black url(imagens/pexels-scottwebb-139198.jpg) no-repeat;
+                height: 100%;
+                background-size: cover;
+                background-position: bottom right;
+                flex: auto;
+                width: 20%;
+             }
+             .campo {
+               flex: auto;
+               width: 50%;
+               padding: 10px;
+                
+             }
+
+             .back {
+                background-color: #4A1E6F;
+                margin-bottom: 5px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 30px;
+                border-radius: 12px;
+                
+
+             }
+
+             .campo {
+                padding-top: 0px;
+             }
+             .como {
+                width: 91%;
+                height: 87%;
+                font-size: 0.89em;   
+             }
+             .material-icons {
+                padding: 5px;
+                color: white;
+             }
+
+             input {
+                border-radius: 12px;
+                border: none;  
+                padding-left: 7px;
+                background-color: #cbebf4;
+             }
+
+             .btnenviar {
+                width: 100%;
+                background-color: #129c8e ;
+                color: white;
+                height: 25px;
+                border-radius: 10px;margin-bottom: 4px;
+            }
+
+             .btnenviar:hover {
+                background-color: #aedad6 ;
+                color: white;
+                cursor: pointer;
+                transition:  background-color 0.5s;
+             }
+
+             .senha {
+                width: 100%;
+                background-color:white ;
+                color: rgb(43, 13, 13);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 22px;
+                text-align: center;
+                border-radius: 10px;
+                outline-color: #129c8e;
+                outline-width: 0.3px;
+                outline-style: solid;   
+             }
+
+            .textBas {
+                padding-bottom: 5px;
+            }
+
+           div.senha > p {
+            font-size:14.5px;
+           }  
+           .senha:hover {
+                background-color: #5bbcb2 ;
+                color: white;
+                
+                cursor: pointer;
+                transition:  background-color 0.5s;
+             }
+
+          
+
+
+             
+             
+            
+        }
+
+        @media screen and (min-width: 992px) {
+            * {
+                transition: all 0.7s ease;
+            }
+            .container {
+                display: flex;
+                justify-content: center;                align-items: center;
+                
+                              
+            }
+            
+            .item {
+
+                width: 84vw;
+                background-color:  rgb(178, 197, 213);
+                flex-direction: row-reverse;
+                border-radius: 20px;
+                overflow: auto;
+                box-shadow: 9px 8px 7px #14071e54;
+                display: flex;
+                height: 68%;;
+                 
+               
+               
+            }
+
+            .imagem {
+                background: black url(imagens/pexels-scottwebb-139198.jpg) no-repeat;
+                height: 100%;
+                background-size: cover;
+                background-position: bottom right;
+                flex: auto;
+                max-width: 50%;
+             }
+             .campo {
+               flex: auto;
+               max-width: 50%;
+               padding: 10px;
+               
+                
+             }
+
+             form {
+                width: 100%;;
+             }
+
+             .back {
+                background-color: #4A1E6F;
+                margin-bottom: 3px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 42px;
+                border-radius: 12px;
+                
+
+             }
+
+             .campo {
+                padding-top: 0px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;   
+             }
+             .como {
+                width: 91%;
+                height: 87%;
+                font-size: 0.89em;   
+             }
+             .material-icons {
+                padding: 5px;
+                color: white;
+             }
+
+             input {
+                border-radius: 12px;
+                border: none;  
+                padding-left: 7px;
+                background-color: #cbebf4;
+             }
+
+             .btnenviar {
+                width: 100%;
+                background-color: #129c8e ;
+                color: white;
+                height: 29px;
+                border-radius: 10px;margin-bottom: 4px;
+            }
+
+             .btnenviar:hover {
+                background-color: #aedad6 ;
+                color: white;
+                cursor: pointer;
+                transition:  background-color 0.5s;
+             }
+
+             .senha {
+                width: 100%;
+                background-color:white ;
+                color: rgb(43, 13, 13);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 29px;
+                text-align: center;
+                border-radius: 10px;
+                outline-color: #129c8e;
+                outline-width: 0.3px;
+                outline-style: solid;   
+             }
+
+            .textBas {
+                padding-bottom: 10px;
+                font-size: 19px;
+            }
+
+           div.senha > p {
+            font-size:14.5px;
+           }  
+
+           h1 {
+            font-size: 37px;
+           }
+           .senha:hover {
+                background-color: #5bbcb2 ;
+                color: white;
+                
+                cursor: pointer;
+                transition:  background-color 0.5s;
+             }
+
+            
+
+             body {
+                background-image: linear-gradient(-45deg, #1d426e, #b2d5e4);
+                transition:  background-image 1s;
+            }
+
+
+             
+             
+            
+        }
+
+        
+
         
     </style>
 </head>
 <body class="container">
     <div class="item">
         <div class="imagem"></div>
+
+
         <div class="campo">
-            <h1>Login</h1>
+            <h1 >Login</h1>
             <p class="textBas">Seja bem vindo (a) novamente. Faca login para acessar sua conta e poder fazer as configuracoes no seu ambiente</p>
             <form action="">
                 
@@ -198,6 +492,8 @@
                 <p>Esqueci a senha</p>
             </div>
         </div>
+
+
     </div>
     
 </body>
